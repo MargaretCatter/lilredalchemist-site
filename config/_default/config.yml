@@ -1,41 +1,102 @@
-build:
-    _merge: none
-caches:
-    _merge: none
-cascade:
-    _merge: none
-frontmatter:
-    _merge: none
-imaging:
-    _merge: none
+baseURL: "https://lilredalchemist.com"
+title: Project Lil' Red Alchemist
+paginate: 5
+theme: hugo-PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: true
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+# googleAnalytics:
+
+minify:
+    disableXML: true
+
 languages:
     en:
-        _merge: none
-markup:
-    _merge: none
-mediatypes:
-    _merge: shallow
-menus:
-    _merge: shallow
-minify:
-    _merge: none
-module:
-    _merge: none
-outputformats:
-    _merge: shallow
+        languageName: "English"
+        weight: 1
+        menu:
+            main:
+                - name: Archive
+                    url: archives
+                    weight: 5
+                - name: Search
+                    url: search/
+                    weight: 10
+                - name: Tags
+                    url: tags/
+                    weight: 10
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
 params:
-    _merge: deep
-        homeInfoParams:
-            Title: Project Lil' Red Alchemist
-            Content: over-invested in the minutiae doesn't cover it.
+    env: production
+    homeInfoParams:
+    Title: Project Lil' Red Alchemist
+    Content: over-invested in the minutiae doesn't cover it.
+    author: "Imani"
+    defaultTheme: auto
+    disableThemeToggle: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowToc: true
+    
     socialIcons: # optional
         - name: twitter
             url: "https://twitter.com/LilRedAlchemist"
-permalinks:
+    # cover:
+    #     hidden: true # hide everywhere but not in structured data
+    #     hiddenInList: true # hide on list pages and home
+    #     hiddenInSingle: true # hide on single page
+    # analytics:
+    #     google:
+    #         SiteVerificationTag: "XYZabc"
+
+build:
     _merge: none
-related:
-    _merge: none
-sitemap:
-    _merge: none
-taxonomies:
-    _merge: none
+    command: hugo
+    commandOrigin: config
+    enviroment:
+        -0.74.3
+        -a2a007d80724c6fc7bf17389a79723352413ec45c0d6165c73b0d87f17d5ebd2
+    publish: /opt/build/repo/public
+    publishOrigin: config
+    
+# caches:
+#     _merge: none
+# cascade:
+#     _merge: none
+# frontmatter:
+#     _merge: none
+# imaging:
+#     _merge: none
+# languages:
+#     en:
+#         _merge: none
+# markup:
+#     _merge: none
+# mediatypes:
+#     _merge: shallow
+# menus:
+#     _merge: shallow
+# minify:
+#     _merge: none
+# module:
+#     _merge: none
+# outputformats:
+#     _merge: shallow
+# permalinks:
+#     _merge: none
+# related:
+#     _merge: none
+# sitemap:
+#     _merge: none
+# taxonomies:
+#     _merge: none
