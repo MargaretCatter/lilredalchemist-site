@@ -1,0 +1,41 @@
+build:
+    _merge: none
+caches:
+    _merge: none
+cascade:
+    _merge: none
+frontmatter:
+    _merge: none
+imaging:
+    _merge: none
+languages:
+    en:
+        _merge: none
+markup:
+    _merge: none
+mediatypes:
+    _merge: shallow
+menus:
+    _merge: shallow
+minify:
+    _merge: none
+module:
+    _merge: none
+outputformats:
+    _merge: shallow
+params:
+    _merge: deep
+        homeInfoParams:
+            Title: Project Lil' Red Alchemist
+            Content: over-invested in the minutiae doesn't cover it.
+    socialIcons: # optional
+        - name: twitter
+            url: "https://twitter.com/LilRedAlchemist"
+permalinks:
+    _merge: none
+related:
+    _merge: none
+sitemap:
+    _merge: none
+taxonomies:
+    _merge: none
